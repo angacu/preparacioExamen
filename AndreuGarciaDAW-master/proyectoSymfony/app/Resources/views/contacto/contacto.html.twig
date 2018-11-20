@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+theyAreBetter.com
+{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/contacto.css') }}" />
+{% endblock %}
+
+{% block body %}
+<h1>Contacto</h1>
+<h4>¡Bienvenido a www.theyAreBetter.com!<h4>
+  <ul class="menu">
+      <li> <a href="uno.html">Home</a></li>
+      <li> <a href="dos.html">Donaciones</a></li>
+      <li> <a href="tres.html">Necesidades</a></li>
+      <li> <a href="tres.html">Contactanos</a></li>
+  </ul>
+
+<form action="form" method="post">
+  <h3>¿Que ocurre?</h3>
+    <div>
+        <input name = "nombre" placeholder="Usuario" type="text" id="usuario" />
+    </div>
+    <div>
+      <br>
+        <input name = "nombre" placeholder="Correo" type="text" id="correo" />
+    </div>
+    <div>
+      <br>
+        <input name = "nombre" placeholder="Mensaje" type="text" id="mensaje" />
+    </div>
+    <br>
+        <input type="submit" value="Atras">
+        <input type="submit" value="Enviar">
+</form>
+
+<h1>www.theyAreBetter.com</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{% endblock %}

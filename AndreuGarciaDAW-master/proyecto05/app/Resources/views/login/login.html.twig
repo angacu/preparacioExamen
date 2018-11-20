@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}¡Bienvenido a www.theyAreBetter.com!{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
+{% endblock %}
+
+{% block body %}
+  <h1>Log In</h1>
+  <h4>¡Bienvenido a www.theyAreBetter.com!</h4>
+    <br>
+    <ul class="menu">
+        <strong><li> <a href="uno.html">home</a></li>
+        <li> <a href="dos.html">registro</a></li>
+        <li> <a href="tres.html">logIn</a></li></strong>
+    </ul>
+    <br>
+      <form action="form" method="post">
+        <h3>LogIn</h3>
+          <div>
+            <br>
+
+              <input name = "Usuario" placeholder="Usuario" type="text"/>
+          </div>
+          <div>
+            <br>
+              <input name = "Contraseña" placeholder="Contraseña" type="password"/>
+          </div>
+          <br>
+           <input type="submit" value="Entrar">
+      </form>
+{% endblock %}

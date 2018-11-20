@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<!-- lo definimos en la funcion -->
+<ul id="morososID">
+
+  <table border="1px" solid;>
+    <tr>
+      <td><b>ID</b></td>
+      <td><b>NOMBRE</b></td>
+      <td><b>APELLIDOS</b></td>
+      <td><b>EDAD</b></td>
+      <td><b>CALLE</b></td>
+      <td><b>DINERO</b></td>
+      <td><b>TELEFONO</b></td>
+    </tr>
+    <tr>
+      <td> {{morososID.id}} </td>
+      <td> {{morososID.nombre}} </td>
+      <td> {{morososID.apellidos}} </td>
+      <td> {{morososID.edad}} </td>
+      <td> {{morososID.calle}} </td>
+      <td> {{morososID.dinero}} </td>
+      <td> {{morososID.telefono}} </td>
+      <br>
+    </tr>
+  </table>
+
+
+</ul>
+{% endblock %}

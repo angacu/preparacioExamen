@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<!-- lo definimos en la funcion -->
+<ul id="productosID">
+
+  <table border="1px" solid;>
+    <tr>
+      <td><b>ID</b></td>
+      <td><b>NOMBRE</b></td>
+      <td><b>PRECIO</b></td>
+      <td><b>IVA</b></td>
+      <br>
+    </tr>
+    <tr>
+      <td> {{productosID.id}} </td>
+      <td> {{productosID.nombre}} </td>
+      <td> {{productosID.precio}} </td>
+      <td> {{productosID.iva}} </td>
+      <br>
+    </tr>
+  </table>
+
+
+</ul>
+{% endblock %}

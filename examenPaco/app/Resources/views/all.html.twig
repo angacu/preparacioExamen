@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<ul id="eventos">
+  {% for event in eventos %}
+
+  <table border="1px">
+    <tr>
+      <td><b>ID</b></td>
+      <td><b>NOMBRE</b></td>
+      <td><b>FECHA</b></td>
+      <td><b>CIUDAD</b></td>
+      <td><b>POBLACION</b></td>
+    </tr>
+    <tr>
+      <td> <a href="{{ path('evento_id',{'id':event.id}) }}">{{event.id}} </a></td>
+      <td> {{event.nombreEvento}} </td>
+      <td> {{event.fecha}} </td>
+      <td> {{event.ciudad}} </td>
+      <td> {{event.poblacion}} </td>
+      <br>
+    </tr>
+  </table>
+
+
+
+  {% endfor %}
+
+
+</ul>
+{% endblock %}

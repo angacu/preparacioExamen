@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<ul id="morosos">
+  {% for moros in morosos %}
+
+  <table border="1px">
+    <tr>
+      <td><b>ID</b></td>
+      <td><b>NOMBRE</b></td>
+      <td><b>APELLIDOS</b></td>
+    </tr>
+    <tr>
+      <td> <a href="{{ path('moroso_id',{'id':moros.id}) }}">{{moros.id}} </a></td>
+      <td> {{moros.nombre}} </td>
+      <td> {{moros.apellidos}} </td>
+      <br>
+    </tr>
+  </table>
+
+
+
+  {% endfor %}
+
+
+</ul>
+{% endblock %}
